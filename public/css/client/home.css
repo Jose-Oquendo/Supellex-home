@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* .body-container{
+    margin-top: 16em;
+} */
+.bread-color{
+    background-color: rgba(26, 35, 58, 0.842);
+}
+.bread-color li a{
+    color: white;
+}
+.bread-color li.active{
+    color: rgb(207, 207, 207);
+}
+.carousel-item{
+    height: 30em;
+}
+.carousel-dark{
+    height: 350px;
+}
+.categorie-tittle{
+    display: block;
+    padding: 0;
+}
+.categorie-tittle .card-title{
+    display: block;
+    width: 6em;
+    margin-top: 50%;
+    background-color: rgba(245, 245, 245, 0.795);
+    color: rgb(2, 55, 90);
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: oblique;
+    text-overflow: ellipsis;
+}
+.card-categorie,
+.card-categorie img{
+    border-radius: 8%;
+}
+.card-categorie:hover .categorie-tittle .card-title{
+    background-color: rgba(245, 245, 245, 0.397);
+    color: rgba(2, 55, 90, 0.397);
+}
+@media screen and (max-width: 600px){
+    .carousel-item{
+        height: 15em;
+    }
+}
