@@ -20,7 +20,8 @@ use App\Http\Controllers\ClientController;
 Route::get('/welcome', function () { return view('welcome'); });
 
 //home or principal page//
-Route::get('/', function (){ return view('client.home'); })->name('home')->middleware('auth.client');
+Route::get('/', function (){ return view('client.home'); })->name('home');
+// Route::get('/', function (){ return view('client.home'); })->name('home')->middleware('auth.client');
 
 //login and register//
 Route::get('/ingreso', [SessionsController::class, 'show'])->name('login.index')->middleware('guest');
